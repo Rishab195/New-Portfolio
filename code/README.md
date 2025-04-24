@@ -1,4 +1,4 @@
-# Ansh's Portfolio Website
+# Rishabh's Portfolio Website
 
 ![DAY-MODE](assets/dayMode.png)
 ![NIGHT-MODE](assets/NightMode.png)
