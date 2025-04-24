@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh's Portfolio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--  Header -->
+    <header class="header">
+        <a href="" class="logo">Rishabh</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+
+            <img src="moon.png" id="icon">
+        </nav>
+
+
+
+    </header>
+
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content" data-aos="fade-down">
+
+            <h1>Hello, I’m <span>Rishabh</span></h1>
+            <title>Text Typing Effect</title>
+
+            <body>
+                <div id="text-container" class="border"></div>
+            </body>
+            <br>
+            <br>
+            <p>
+
+                I’m a data science enthusiast with a strong foundation in Python and C++, currently pursuing a B.Tech in
+                Computer Science and Engineering with a specialization in Data Science at Lovely Professional
+                University. My journey in tech began in 8th grade and has grown into a passion for building impactful,
+                real-world solutions. I’ve worked on several data-driven projects and enjoy transforming complex data
+                into meaningful insights. I'm always eager to explore opportunities in data science, research, and to
+                connect with professionals who share a vision for innovation and growth..
+
+
+            </p>
+
+            <div class="social-media">
+                <a href="https://github.com/Rishab195"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://www.linkedin.com/in/rishabhjn195/"><i class='bx bxl-linkedin'></i></a>
+                <!-- <a href=""><i class='bx bxl-facebook'></i></a> -->
+                <a href="https://www.instagram.com/rishab_jn195/?hl=en"><i class='fab fa-instagram'></i></a>
+                <!-- <a href="https://www.x.com/techbire"><i class='bx bxl-twitter'></i></a> -->
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=rishabjn195@gmail.com@gmail.com"><i
+                        class='bx bx-envelope'></i>
+            </div>
+
+            <div class="btn-container">
+                <a href="SpecializedRishabhfinal.pdf" class="btn" id="download-btn">Download CV</a>
+                <a href="#contact" class="btn" id="hire-me-btn">Hire Me</a>
+
+            </div>
+        </div>
+
+        <div class="home-img" data-aos="fade-down">
+            <video id="video-cv" src="VieoCV.mp4" class="video-cv" muted controls poster="photome.jpg">
+            </video>
+        </div>
+
+
+    </section>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create three equal columns that float next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style for certification list */
+        .column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .column li {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .column a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .column a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img" data-aos="fade-left">
+            <img src="Profile3.jpg" alt="">
+        </div>
+
+        <div class="about-content" data-aos="slide-left">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>Beyond technical skills, I value curiosity, collaboration, and continuous learning. I'm currently
+                sharpening my skills in machine learning, data visualization, and real-time analytics, while also
+                exploring tools like Power BI and Tableau. I enjoy participating in coding challenges and working on
+                projects that turn data into action. Whether it's optimizing code, building intelligent dashboards, or
+                exploring new datasets, I’m always driven by the idea of solving problems that matter.</p>
+
+            <div class="tab-titles" data-aos="fade-left">
+                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('certification')">Certification</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="experience">
+                <ul>
+                    <li><span>AI ML Intern EduFabrica</span><br>IIT Kanpur<br>Dec 2023 - Feb 2024</li>
+                    <li><span>Web Development Intern</span><br>Sudaku CodeClause Pvt Ltd,Vadgaon pune, India <br>Nov
+                        2023 - Dec 2023</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021-2022</span><br>Senior secondary education<br> 90.5% CBSE BOARD</li>
+                </ul>
+                <ul>
+                    <li><span>2022-Present</span><br> B.Tech (CSE)<br>Lovely Professional University</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="certification">
+                <div class="row">
+                    <div class="column">
+                        <ul>
+                            <li>
+                                <img src="gfgCert.png" alt="GeeksforGeeks ML Certificate"
+                                    style="width:100%; max-width:400px;">
+                                <p><strong>Complete Machine Learning and Data Science</strong><br>GeeksforGeeks</p>
+                            </li>
+                            <li>
+                                <img src="Tableau.jpg" alt="" style="width:100%; max-width:400px;">
+                                <p><strong>Data analysis with Tableau</strong><br>Coursera</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>
+                                <img src="DSA.jpg" alt="" style="width:100%; max-width:400px;">
+                                <p><strong>Supervised Machine Learning</strong><br>IBM</p>
+                            </li>
+                            <li>
+                                <img src="CourseraRProg_page-0001.jpg" alt="Generative AI Certificate"
+                                    style="width:100%; max-width:400px;">
+                                <p><strong>R Programming</strong><br>JOHNS HOPKINS University</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- <li>
+                                <span>META</span><br>
+                                Introduction to Front-End Development<br>
+                                Issued Jan 2024<br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/5DH2HCXXRWU9"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>Division of Student Welfare - LPU</span><br>
+                                HackWithVertos - 24 Hour Hackathon<br>
+                                Issued Mar 2024<br>
+                                <a href="https://drive.google.com/file/d/1d6EkiAEvWOEu5NiXw3JC7kab7q2_HeKG/view?usp=sharing"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>HKUST</span><br>
+                                Software Engineering: Implementation and Testing<br>
+                                Issued Apr 2024<br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/NXSP4AQ5R2LW"
+                                    target="_blank">Certificate</a>
+                            </li>
+                            <li>
+                                <span>iamneo (Formerly Examly)</span><br>
+                                Computer Programming<br>
+                                Issued May 2024<br>
+                                <a href="https://lpucolab438.examly.io/certificate/U2FsdGVkX1%2FEeVfvMytV5MbK8rrh1Govg9xDvit1ebU%3D"
+                                    target="_blank">Certificate</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section ends -->
+
+
+
+    <!-- Skills section -->
+    <section id="skills" class="services">
+        <div class="ser-title">
+            <h2 class="heading">My <span>Skills</span></h2>
+        </div>
+        <div class="services-box" data-aos="fade-left">
+            <div class="box" data-aos="fade-left">
+                <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Languages &nbsp; &nbsp;
+                </h2>
+                <div>
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://www.cprogramming.com" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/c.svg"
+                                alt="c" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>C</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://www.cplusplus.com" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/cplusplus.svg"
+                                alt="cplusplus" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>C++</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/Reference.html" target="_blank"
+                            rel="noreferrer">
+                            <img src="https://shorturl.at/akZWf" alt="cplusplus" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>Java</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                                alt="python" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>Python</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                            rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                                alt="javascript" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>JavaScript</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <figure class="item" style="display:inline-block;">
+                        <a href="" target="_blank" rel="noreferrer">
+                            <img src="https://shorturl.at/VxSAY" alt="javascript" width="40" height="40" />
+                        </a>
+                        <figcaption style="text-align:center;"><b>SQL</b></figcaption>
+                    </figure>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+
+                </div>
+            </div>
+
+            <div class="box" data-aos="slide-right">
+                <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Tools &Technologies &nbsp;
+                    &nbsp;</h2>
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://git-scm.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/git.svg"
+                            alt="git" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Git</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img src="https://img.icons8.com/?size=100&id=117561&format=png&color=000000" alt="linux"
+                            width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Excel</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://www.mysql.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                            alt="mysql" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>MySQL</b></figcaption>
+                </figure>
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://cloud.google.com" target="_blank" rel="noreferrer">
+                        <img src="https://img.icons8.com/?size=100&id=0JUBXbNc9AaZ&format=png&color=000000"
+                            alt="googlecloud" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Jupyter</b></figcaption>
+                </figure>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+                <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Libraries &nbsp; &nbsp;
+                </h2>
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://numpy.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/numpy.svg"
+                            alt="numpy" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>NumPy</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg"
+                            alt="pandas" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Pandas</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <!-- <figure class="item" style="display:inline-block;">
+                    <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer">
+                        <img src="" alt="pandas" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Pandas</b></figcaption>
+                </figure> -->
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                            alt="nodejs" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Node.js</b></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- ======= End Skills Section ======= -->
+
+
+    <!-- projects section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container" data-aos="fade-right">
+
+            <div class="portfolio-card">
+
+                <img src="RProject.png" alt="">
+                <div class="portfolio-details" data-aos="fade-right">
+                    <h3>Dynamic Dashboard App<span></span></h3>
+                    <p>A dynamic dashboard that shows mean, median, mode, and other stats of a dataset with interactive
+                        charts. Filters allow users to explore data easily with real-time visual updates.</p>
+                </div>
+                <a href="https://rishabh195.shinyapps.io/DynamicVisualizationApp/" class="btn">View Project</a>
+            </div>
+
+            <div class="portfolio-card">
+
+                <img src="AdidasP.png" alt="" data-aos="fade-left">
+                <div class="portfolio-details" data-aos="fade-left">
+                    <h3>Adidas Dashboard<span></span></h3>
+                    <p>A dashboard that analyzes Adidas sales data using interactive visuals. It shows key metrics like
+                        total sales, profit, and quantity sold across different regions, products, and time periods.
+                        Filters and charts help in exploring trends and performance easily.</p>
+                </div>
+                <a href="https://shorturl.at/vk1Va" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const container = document.querySelector('.portfolio-container');
+        const leftBtn = document.querySelector('.carousel-btn.left');
+        const rightBtn = document.querySelector('.carousel-btn.right');
+
+        let scrollAmount = 0;
+        const cardWidth = 320; // Adjust based on actual card width + margin
+
+        rightBtn.addEventListener('click', () => {
+            container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        });
+
+        leftBtn.addEventListener('click', () => {
+            container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        });
+    </script>
+
+
+    <!-- contact info section -->
+    <section class="contact" id="contact">
+        <h2 class="heading"> Contact <span>Me <i class='bx bx-message-dots'></i></span></h2>
+
+        <form action="https://formspree.io/f/myzgadyz" method="POST">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="email" name="Email" placeholder="Email Address">
+            </div>
+
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </section>
+
+    <!--Footer section -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Made by Rishabh Jain copyright &copy; 2024 | All
+                Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
